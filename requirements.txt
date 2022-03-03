@@ -1,0 +1,4 @@
+pillow
+opencv-contrib-python
+streamlit
+textblob
