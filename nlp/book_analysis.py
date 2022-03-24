@@ -21,12 +21,11 @@ file = st.file_uploader("Upload a file", type=["txt"])
 if file:
     savetoUpload(file)
     blob = read_text('./uploads/'+ file.name)   
-    
     word_count = len(blob.words)
     sentence_count = len(blob.sentences)
     st.markdown(f'''
     ---
-    ## Total words: {word_count}
-    ## Total sentences: {sentence_count}
+    #### Total words: {word_count}
+    #### Total sentences: {sentence_count}
     ---
     ''')
